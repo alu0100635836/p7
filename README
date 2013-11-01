@@ -31,3 +31,4 @@ gem 'rspec'
 3.-) Indique la URL (HTTP) del repositorio Github que ha desarrollado.
 -----------------------------------------------------------------------------------
 
+  Para realizar esta práctica reutilizamos el código de la práctica 6, añadiendo la "Comparable" y borramos los métodos de comparación, creamos el método necesario que es el de guerra de las galaxias <=>, también creamos los tres ficheros que se nos pide el práctica que son ".travis.yml", "Gemfile" y "Rakefile". Entramos en travis, sincronizamos con el repositorio de la práctica y nos aseguramos de que los resultados fueran correctos.
