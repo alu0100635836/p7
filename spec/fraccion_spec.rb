@@ -72,10 +72,6 @@ describe Fraccion  do
 	      @fraccion.d.should eq (1) #4 -> reducido es 1
 	end
 	
-	it "Se debe de poder comprobar si una fraccion es menor que otra" do
-	     @fraccion.menor(Fraccion.new(10,5)).should be true
-	end
-
         it "Se debe sumar dos fracciones con + y dar el resultado de forma reducida" do
               @fraccion.+(Fraccion.new(2,3))
               @fraccion.n.should eq (-28) 
@@ -86,18 +82,6 @@ describe Fraccion  do
               @fraccion.-@(Fraccion.new(2,3))
               @fraccion.n.should eq (-32) 
               @fraccion.d.should eq (3)
-        end
-	
-	it "Se debe de poder comprobar si una fraccion es mayor que otra" do
-            @fraccion.mayor(Fraccion.new(-50,2)).should be true
-      	end
-	
-	it "Se debe de poder comprobar si una fraccion es menor o igual que otra" do
-	    @fraccion.menorigual(Fraccion.new(10,5)).should be true
-	end
-	
-	it "Se debe de poder comprobar si una fraccion es mayor o igual que otra" do
-            @fraccion.mayorigual(Fraccion.new(-30,2)).should be true
         end
 	
 	it "Comprobar reciproco de la division de fracciones" do

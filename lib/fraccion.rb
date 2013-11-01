@@ -1,4 +1,5 @@
 require "gcd.rb"
+include Comparable #librería comparable para desarrollar la práctica7
 
 class Fraccion
   attr_reader :n,:d
@@ -101,30 +102,6 @@ class Fraccion
     reducir
   end
 
-    #metodo para ver si nuestra fraccion es mayor que fraccion2
-  def mayor(fraccion2)
-      mcm = (@d * fraccion2.d)/gcd(@d, fraccion2.d)
-      a = (mcm/@d*@n)
-      b = (mcm/fraccion2.d*fraccion2.n)
-      return @n > fraccion2.n
-      false
-  end
-    #metodo para ver si nuestra fraccion es menorigual que fraccion2
-  def menorigual(fraccion2)
-      mcm = (@d * fraccion2.d)/gcd(@d, fraccion2.d)
-      a = (mcm/@d*@n)
-      b = (mcm/fraccion2.d*fraccion2.n)
-      return @n <= fraccion2.n
-      false
-  end
-    #metodo para ver si nuestra fraccion es mayorigual que fraccion2
-  def mayorigual(fraccion2)
-      mcm = (@d * fraccion2.d)/gcd(@d, fraccion2.d)
-      a = (mcm/@d*@n)
-      b = (mcm/fraccion2.d*fraccion2.n)
-      return @n >= fraccion2.n
-      false
-  end
 
 
 end
