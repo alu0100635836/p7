@@ -101,7 +101,20 @@ class Fraccion
     @d = mcm
     reducir
   end
+    #Método necesario con la librería Comparable
+  def <=>(other)
+      mcm = (@d * other.d)/gcd(@d, other.d)
+      a = (mcm/@d*@n)
+      b = (mcm/other.d*other.n)
 
+      if a < b
+         -1
+      elsif a > b
+         1
+      else
+         0
+      end
+   end 
 
 
 end
